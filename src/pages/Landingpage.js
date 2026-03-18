@@ -495,7 +495,6 @@ const Footer = () => (
 
     <div className="footer-bottom">
       <span>© {new Date().getFullYear()} Obscur AI. All rights reserved.</span>
-      <span className="footer-made">Made with ◈</span>
     </div>
   </footer>
 );
@@ -506,6 +505,17 @@ const Footer = () => (
    ================================================================ */
 
 const LandingPage = ({ onLoginClick }) => {
+  useEffect(() => {
+    const root = document.getElementById("root");
+    document.body.classList.add("landing-scroll-enabled");
+    root?.classList.add("landing-root-scroll-enabled");
+
+    return () => {
+      document.body.classList.remove("landing-scroll-enabled");
+      root?.classList.remove("landing-root-scroll-enabled");
+    };
+  }, []);
+
   return (
     <div className="landing-page">
       <Navbar onLoginClick={onLoginClick} />

@@ -75,6 +75,17 @@
 
 .landing-page ul { list-style: none; }
 
+body.landing-scroll-enabled {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#root.landing-root-scroll-enabled {
+  height: auto;
+  min-height: 100vh;
+  display: block;
+}
+
 
 /* ─── Shared Section Styles ──────────────────────────────────── */
 .section-inner {
@@ -1185,7 +1196,6 @@
   color: var(--lp-text-muted);
 }
 
-.footer-made { color: var(--lp-amber); opacity: 0.5; }
 
 
 /* ─── Animations ─────────────────────────────────────────────── */

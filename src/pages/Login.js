@@ -161,7 +161,7 @@ const LeftPanel = () => (
     <div className="left-content">
       <div className="left-logo">
         <span className="left-logo-icon">◈</span>
-        <span className="left-logo-text">Obscure AI</span>
+        <span className="left-logo-text">Obscur AI</span>
       </div>
 
       <div className="left-headline">
@@ -238,7 +238,7 @@ const Login = ({ onLoginSuccess }) => {
           {/* Mobile logo */}
           <div className="login-mobile-logo">
             <span className="left-logo-icon">◈</span>
-            <span className="left-logo-text">Obscure AI</span>
+            <span className="left-logo-text">Obscur AI</span>
           </div>
 
           {/* Tab switch */}
@@ -265,7 +265,7 @@ const Login = ({ onLoginSuccess }) => {
             </h2>
             <p className="login-subtitle">
               {mode === "login"
-                ? "Sign in to continue to Obscure AI"
+                ? "Sign in to continue to Obscur AI"
                 : "Start chatting with your documents"}
             </p>
           </div>
